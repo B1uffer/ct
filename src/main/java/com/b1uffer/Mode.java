@@ -29,7 +29,7 @@ public class Mode {
             if(count > max) { // max보다 count가 더 크다면
                 max = count; // max에 count를 넣음
                 solution = key;
-            } else if(count == max) {
+            } else if(count == max) { // count와 max가 같다면, solution에 -1을 넣음
                 solution = -1;
             }
         }
