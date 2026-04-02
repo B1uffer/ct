@@ -1,13 +1,11 @@
 package com.b1uffer;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        int[] array = {1,1,2,2};
-        int n = 54;
-        Hate hate = new Hate();
-        System.out.println(Arrays.toString(hate.solution(n)));
-//        System.out.println(15/2);
+        System.out.println("hello world");
+        int a = 4;
+        int n = 12;
+        PizzaThree pizza = new PizzaThree();
+        System.out.println(pizza.solution(a,n));
     }
 }
