@@ -21,4 +21,8 @@ public class IceCoffee {
         }
         return answer;
     }
+
+    public int[] solution2(int money) {
+        return new int[] {money / 5500, money % 5500};
+    }
 }

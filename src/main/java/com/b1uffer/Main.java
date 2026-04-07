@@ -9,6 +9,6 @@ public class Main {
         int n = 12;
         int money = 5000;
         IceCoffee coffee = new IceCoffee();
-        System.out.println(Arrays.toString(coffee.solution(money)));
+        System.out.println(Arrays.toString(coffee.solution2(money)));
     }
 }
