@@ -8,7 +8,8 @@ public class Main {
         int a = 40;
         int n = 12;
         int money = 5000;
-        Age coffee = new Age();
-        System.out.println(coffee.solution(a));
+        int[] arr = {1,2,3,4,5};
+        ReverseList list = new ReverseList();
+        System.out.println(Arrays.toString(list.solution(arr)));
     }
 }
