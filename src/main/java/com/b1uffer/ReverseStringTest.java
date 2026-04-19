@@ -19,6 +19,9 @@ public class ReverseStringTest {
         System.out.println(s2);
     }
 
+    /**
+     * StringBuilder를 활용하여 문자열 뒤집기
+     */
     public void test2() {
         StringBuilder s1 = new StringBuilder("스프링");
         System.out.println("s1 = " + s1);
@@ -32,10 +35,26 @@ public class ReverseStringTest {
         System.out.println("reversed String of the " + s3 + " is " + s3.reverse());
     }
 
+    /**
+     * 재귀를 활용하여 문자열 뒤집기
+     */
+    public String ReverseStringTest(String str) {
+        if(str.isEmpty()) {
+            System.out.println("String is empty");
+            return str;
+        } else {
+            return ReverseStringTest(str.substring(1)) + str.charAt(0);
+        }
+    }
+
     public static void main(String[] args) {
         ReverseStringTest test1 = new ReverseStringTest();
-        test1.test2();
+//        test1.test2();
 
-        System.out.println();
+        String str1 = test1.ReverseStringTest("Java is fun");
+        System.out.println(str1);
+
+        String str2 = "Java";
+        System.out.println(str2.substring(1));
     }
 }
