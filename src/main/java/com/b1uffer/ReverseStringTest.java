@@ -1,5 +1,7 @@
 package com.b1uffer;
 
+import java.util.Stack;
+
 public class ReverseStringTest {
     /**
      * for 루프를 사용해서 문자열 뒤집는 법
@@ -85,6 +87,21 @@ public class ReverseStringTest {
                 .toString();
     }
 
+    /**
+     * 스택을 사용해서 문자열 뒤집기
+     */
+    public String test5(String str) {
+        Stack<Character> stack = new Stack<>();
+        for(int i = 0; i < str.length(); i++) {
+            stack.push(str.charAt(i));
+        }
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            sb.append(stack.pop());
+        }
+        return sb.toString();
+    }
+
     public static void main(String[] args) {
         ReverseStringTest test1 = new ReverseStringTest();
 //        test1.test2();
@@ -96,5 +113,6 @@ public class ReverseStringTest {
 
         System.out.println(reverseString(str2));
         System.out.println(test1.test3(str2));
+        System.out.println("test5 : " + test1.test5(str2));
     }
 }
