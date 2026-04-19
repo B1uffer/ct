@@ -57,6 +57,23 @@ public class ReverseStringTest {
         return str.charAt(str.length() - 1) + reverseString(str.substring(0, str.length() - 1));
     }
 
+    /**
+     * 배열을 사용하여 문자열을 뒤집기
+     */
+    public String test3(String str) {
+        if(str == null || str.equals("")) {
+            return str;
+        }
+
+        int length = str.length();
+        char[] newArr = new char[length];
+
+        for(int i = 0; i < length; i++) {
+            newArr[length - i - 1] = str.charAt(i);
+        }
+        return String.valueOf(newArr);
+    }
+
     public static void main(String[] args) {
         ReverseStringTest test1 = new ReverseStringTest();
 //        test1.test2();
@@ -67,5 +84,6 @@ public class ReverseStringTest {
         String str2 = "Java";
 
         System.out.println(reverseString(str2));
+        System.out.println(test1.test3(str2));
     }
 }
