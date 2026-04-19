@@ -47,6 +47,16 @@ public class ReverseStringTest {
         }
     }
 
+    /**
+     * 재귀를 사용하여 문자열을 뒤집는 또다른 방법
+     */
+    public static String reverseString(String str) {
+        if(str.length() == 1) {
+            return str;
+        }
+        return str.charAt(str.length() - 1) + reverseString(str.substring(0, str.length() - 1));
+    }
+
     public static void main(String[] args) {
         ReverseStringTest test1 = new ReverseStringTest();
 //        test1.test2();
@@ -55,6 +65,7 @@ public class ReverseStringTest {
         System.out.println(str1);
 
         String str2 = "Java";
-        System.out.println(str2.substring(1));
+
+        System.out.println(reverseString(str2));
     }
 }
