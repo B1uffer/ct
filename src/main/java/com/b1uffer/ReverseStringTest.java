@@ -74,6 +74,17 @@ public class ReverseStringTest {
         return String.valueOf(newArr);
     }
 
+    /**
+     * Stream을 사용해서 문자열 뒤집기
+     */
+    public String test4(String str) {
+        return str.chars() // 문자열을 int 스트림으로 변환하기, chars()이긴한데 유니코드 값으로 나온다
+                .mapToObj(c -> (char)c) // int를 char형으로 다시 변환함
+                .collect(StringBuilder::new, StringBuilder::append, StringBuilder::append)
+                .reverse()
+                .toString();
+    }
+
     public static void main(String[] args) {
         ReverseStringTest test1 = new ReverseStringTest();
 //        test1.test2();
