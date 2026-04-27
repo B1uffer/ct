@@ -10,6 +10,12 @@ public class Sheep {
      */
     public int solition(int n, int k) {
         int answer = 0;
+        if(n >= 10) { // 10인분 이상을 먹으면,
+            k -= n / 10; // 음료수를 서비스로 준다
+        }
+        int nPrice = n * 12000;
+        int kPrice = k * 2000;
+        answer = nPrice + kPrice;
         return answer;
     }
 }
