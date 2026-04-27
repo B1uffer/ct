@@ -9,8 +9,9 @@ public class Main {
         int n = 12;
         int money = 5000;
         int[] arr = {1,2,3,4,5};
-        String str = "abc";
-        ReverseString list = new ReverseString();
-        System.out.println(list.solution(str));
+        String str = "abcdef";
+        String str2 = "abd";
+        DeleteString abc = new DeleteString();
+        System.out.println(abc.solution(str, str2));
     }
 }
