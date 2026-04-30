@@ -6,12 +6,12 @@ public class SliceList {
      * numbers의 num1번째 인덱스부터
      * num2번째 인덱스까지 자른 정수배열을 return하기
      */
-    public int[] solution(int[] numbers, int num1, int num2) {
+    public int[] solution(int[] numbers, int num1, int num2) { // 1, 3
         int[] answer = {};
         answer = new int[num2 - num1 + 1]; // 3 - 1 + 1 = 3
 
-        for(int i = 0; i < num2-num1+1; i++) {
-            int number = numbers[num1+i-1];
+        for(int i = 0; i < num2-num1+1; i++) { // 0, 1, 2
+            int number = numbers[num1+i]; // 1 + 0 - 1 = 0, numbers[0]을 가져오게 됨
             answer[i] = number;
         }
         return answer;
