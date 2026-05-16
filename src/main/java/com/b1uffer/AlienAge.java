@@ -8,10 +8,10 @@ public class AlienAge {
      * 23살은 cd, 51살은 fb으로 표현한다
      * 나이 age가 매개변수로 주어질 때, 이 행성에 기반한 나이를 return하기
      */
-    public String solution(int age) {
+    public String solution(int age) { // 23
         String answer = "";
         String alienAge = "abcdefghij";
-        String[] ageArr = String.valueOf(age).split("");
+        String[] ageArr = String.valueOf(age).split(""); // "2", "3"
 
         for(int i=0; i<ageArr.length; i++) {
             answer += alienAge.charAt(Integer.parseInt(ageArr[i]));
