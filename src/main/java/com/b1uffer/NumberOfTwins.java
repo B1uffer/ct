@@ -25,8 +25,19 @@ public class NumberOfTwins {
         return answer;
     }
 
+    public int solution2(int n) {
+        int answer = 0;
+
+        for(int i=1; i<=n; i++) {
+            if(n%i == 0) {
+                answer++;
+            }
+        }
+        return answer;
+    }
+
     public static void main(String[] args) {
         NumberOfTwins twins = new NumberOfTwins();
-        System.out.println(twins.solution(25));
+        System.out.println(twins.solution2(100));
     }
 }
