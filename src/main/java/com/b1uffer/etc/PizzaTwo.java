@@ -1,4 +1,4 @@
-package com.b1uffer;
+package com.b1uffer.etc;
 
 public class PizzaTwo {
     public int solution(int n) {

@@ -1,4 +1,4 @@
-package com.b1uffer;
+package com.b1uffer.etc;
 
 public class PizzaOne {
 //    머쓱이네 피자가게는 피자를 일곱 조각으로 잘라 줍니다.

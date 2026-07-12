@@ -1,6 +1,4 @@
-package com.b1uffer;
-
-import java.util.*;
+package com.b1uffer.etc;
 
 public class Age {
     /**

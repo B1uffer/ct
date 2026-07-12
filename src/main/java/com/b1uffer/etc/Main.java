@@ -1,6 +1,4 @@
-package com.b1uffer;
-
-import java.util.Arrays;
+package com.b1uffer.etc;
 
 public class Main {
     public static void main(String[] args) {

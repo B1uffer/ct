@@ -1,4 +1,4 @@
-package com.b1uffer;
+package com.b1uffer.etc;
 // 문자열 섞기
 public class ShakeString {
 //    길이가 같은 두 문자열 str1과 str2가 주어집니다.
